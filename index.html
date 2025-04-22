@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector de Toxicidad</title>
+  <link rel="stylesheet" href="style.css"> 
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2"></script>
+</head>
+<body>
+  <h1>Detector de Toxicidad</h1>
+  <p>Escribe una frase para saber si es tóxica o no.</p>
+
+  <!-- Caja de texto para ingresar la frase -->
+  <input type="text" id="inputText" placeholder="Ingresa una frase" style="width: 300px;">
+  <button onclick="analizarTexto()">Analizar</button>
+
+  <p id="resultado"></p>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
